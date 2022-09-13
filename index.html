@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>form to table</title>
+  </head>
+  <body class="container">
+    <center>
+      <h1 class="bg-success">form to table</h1>
+      <div class="container">
+        <form action="#" id="formSubmission" method="get" class="form-group">
+          <span>Name</span>
+          <input type="Name" placeholder="Enter your Name" id="name" required />
+          <span>Email</span>
+          <input
+            type="email"
+            placeholder="Enter your Email"
+            id="email"
+            required
+          />
+          <span>Phone</span>
+          <input type="number" placeholder="Phone" id="phone" required />
+          <span>Address</span>
+          <input
+            type="text"
+            placeholder="Enter Address"
+            id="address"
+            required
+          />
+          <button type="submit">Submit</button>
+        </form>
+
+        <ul id="data" class=".container-fluid" scope="row">
+          <li scope="col">Name</li>
+          <li scope="col">Email</li>
+          <li scope="col">Phone</li>
+          <li scope="col">Address</li>
+        </ul>
+      </div>
+    </center>
+    <script src="./index.js"></script>
+  </body>
+</html>
